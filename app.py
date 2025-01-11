@@ -1,5 +1,10 @@
 from flask import Flask, request, jsonify, send_from_directory, render_template
 import os
+# Desactivar las optimizaciones de oneDNN
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+
+# Ahora importa TensorFlow después de configurar la variable de entorno
+import tensorflow as tf
 import uuid
 import cv2
 from utils import process_image  # Simulación de procesamiento
