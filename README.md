@@ -1,1 +1,2 @@
-# deteccion-de-emociones
+# facial-point-detection
+Detección de puntos faciales y emociones,
